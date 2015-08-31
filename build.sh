@@ -3,6 +3,10 @@ bash -xe
 sudo yum install -y docker
 sudo service docker start
 
+# Clone framework
+git clone https://github.com/jasonbrooks/byo-atomic.git
+pushd byo-atomic
+
 # Clone the defs
 git clone https://github.com/fabiand/sig-atomic-buildscripts.git node
 pushd node
