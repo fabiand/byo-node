@@ -1,6 +1,6 @@
 set -xe
 
-OVIRTVERS=3.5
+OVIRTVERS=${1:-3.5}
 DSTDIR=$2
 
 sudo yum install -y docker
