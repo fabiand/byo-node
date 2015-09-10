@@ -23,8 +23,7 @@ do
 
   # Clone the defs
   if [[ ! -e node ]]; then
-    git clone https://github.com/fabiand/sig-atomic-buildscripts.git node
-    git checkout ovirt-host
+    git clone --branch ovirt-host https://github.com/fabiand/sig-atomic-buildscripts.git node
   fi
   pushd node
     git clean -fdx
