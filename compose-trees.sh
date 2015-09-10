@@ -33,7 +33,7 @@ do
 
   # Build the tree
   incontainer cp -v /builddir/node/RPM-GPG-ovirt /etc/pki/rpm-gpg/RPM-GPG-ovirt-$OVIRTVER
-  incontainer rpm-ostree compose tree --repo=/srv/rpm-ostree/repo/ /builddir/node/centos-ovirt-host.json
+  incontainer rpm-ostree compose tree --repo=/srv/rpm-ostree/repo/ /builddir/node/centos-ovirt-host.json 2>&1 | tee compose-$OVIRTVER.log
   incontainer du -hs /srv/rpm-ostree
   sudo docker cp atomicrepo:/srv/rpm-ostree .
 
