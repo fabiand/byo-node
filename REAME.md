@@ -1,4 +1,10 @@
 
+Build
+-----
+
+- `bash ci/build.sh`
+- `service firewalld stop && python -m SimpleHTTPServer`
+
 Deployment
 ----------
 
