@@ -1,3 +1,3 @@
 set -ex
 
-bash compose-trees.sh "ovirt-3.5 ovirt-3.6" "$PWD"
+bash compose-trees.sh "3.5 3.6" "$PWD"
